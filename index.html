@@ -9,39 +9,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-
     <!-- styles -->
     <link rel="stylesheet" href="/dist/css/main.css" />
   </head>
   <body>
-    <main>
-      <section class="container">
+    <main class="main">
+      <section class="reviews">
         <!-- title -->
-        <div class="title">
-          <h2>Our reviews do the talking</h2>
-          <div class="underline"></div>
+        <div class="reviews__header">
+          <h2 class="reviews__title">Our reviews do the talking</h2>
+          <div class="reviews__underline"></div>
         </div>
         <!-- review -->
-        <article class="review">
-          <div class="img-container">
-            <img src="person-1.jpeg" id="person-img" alt="" />
+        <article class="review-card">
+          <div class="review-card__image-container">
+            <img src="person-1.jpeg" id="person-img" alt="" class="review-card__image" />
           </div>
-          <h4 id="author">sara jones</h4>
-          <p id="job">ux designer</p>
-          <p id="info">
+          <h4 id="author" class="review-card__author">sara jones</h4>
+          <p id="job" class="review-card__job">ux designer</p>
+          <p id="info" class="review-card__text">
             I've had the pleasure of working with this team for over two years now. Their attention to detail and commitment to excellence is outstanding. 
             The way they handle projects and communicate with clients is exemplary.
+          </p>
           <!-- prev next buttons-->
-          <div class="button-container">
-            <button class="prev-btn">
+          <div class="review-card__controls">
+            <button class="btn btn-prev">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="next-btn">
+            <button class="btn btn-next">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
           <!-- random button -->
-          <button class="random-btn">surprise me</button>
+          <button class="btn btn-random">surprise me</button>
         </article>
       </section>
     </main>

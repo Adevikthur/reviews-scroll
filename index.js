@@ -34,9 +34,10 @@ const author = document.getElementById("author");
 const job = document.getElementById("job");
 const info = document.getElementById("info");
 
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
-const randomBtn = document.querySelector(".random-btn");
+//btn items
+const prevBtn = document.querySelector(".btn-prev");
+const nextBtn = document.querySelector(".btn-next");
+const randomBtn = document.querySelector(".btn-random");
 
 // set starting item
 let currentItem = 0;
@@ -73,7 +74,7 @@ prevBtn.addEventListener("click", function () {
   showPerson();
 });
 
-randomBtn.addEventListener('click', function(){
-  currentItem = Math.floor(Math.random() * reviews.length)
-  showPerson()
-})
+randomBtn.addEventListener("click", function () {
+  currentItem = Math.floor(Math.random() * reviews.length);
+  showPerson();
+});
