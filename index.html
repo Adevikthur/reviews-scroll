@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Reviews</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="/dist/css/main.css" />
-  </head>
-  <body>
-    <main class="main">
-      <section class="reviews">
-        <!-- title -->
-        <div class="reviews__header">
-          <h2 class="reviews__title">Our reviews do the talking</h2>
-          <div class="reviews__underline"></div>
-        </div>
-        <!-- review -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Reviews</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="/dist/css/main.css" />
+</head>
+
+<body>
+  <main class="main">
+    <section class="reviews">
+      <!-- title -->
+      <div class="holder">
+        <h1 class="header-text">Real <span>Reviews</span> <br> Real <span>People</span></h1>
+        <p class="header-small">Don’t just take our word for it, hear from our partners & clients.</p>
+      </div>
+      <!-- review -->
+      <!-- HEADER -->
+
+      <div class="review-x-controls">
         <article class="review-card">
           <div class="review-card__image-container">
             <img src="person-1.jpeg" id="person-img" alt="" class="review-card__image" />
           </div>
-          <h4 id="author" class="review-card__author">sara jones</h4>
-          <p id="job" class="review-card__job">ux designer</p>
-          <p id="info" class="review-card__text">
-            I've had the pleasure of working with this team for over two years now. Their attention to detail and commitment to excellence is outstanding. 
-            The way they handle projects and communicate with clients is exemplary.
-          </p>
-          <!-- prev next buttons-->
-          <div class="review-card__controls">
-            <button class="btn btn-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <div class="text-holder">
+            <p id="info" class="review-card__text">
+              I've had the pleasure of working with this team for over two years now. Their attention to detail and
+              commitment to excellence is outstanding.
+              The way they handle projects and communicate with clients is exemplary.
+            </p>
+            <div class="author-x-job">
+              <div class="stars-holder">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+
+              </div>
+              <h4 id="author" class="review-card__author">sara jones</h4>
+              <p id="job" class="review-card__job">ux designer</p>
+            </div>
           </div>
+
+          <!-- prev next buttons-->
+
           <!-- random button -->
-          <button class="btn btn-random">surprise me</button>
+
         </article>
-      </section>
-    </main>
-    <!-- javascript -->
-    <script src="index.js"></script>
-  </body>
+        <div class="controls">
+          <button class="btn btn-prev">
+            <i class="ph ph-caret-left"></i>
+          </button>
+
+          <button class="btn btn-random">
+            <i class="ph ph-shuffle"></i>
+            Surprise me
+          </button>
+
+          <button class="btn btn-next">
+            <i class="ph ph-caret-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <object data="/bg-work.svg" type="" class="bg-work"></object>
+      <object data="/top-rectangles.svg" type="" class="top-rects"></object>
+    </section>
+  </main>
+  <!-- javascript -->
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</body>
+
 </html>

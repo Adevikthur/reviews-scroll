@@ -27,7 +27,30 @@ const reviews = [
     img: "https://www.course-api.com/images/people/person-4.jpeg",
     text: `Our company has seen remarkable growth since implementing their solutions. The team's dedication to quality and innovation has made them our go-to development partner for all our digital projects.`,
   },
+  {
+    id: 5,
+    name: "sarah chen",
+    job: "software architect",
+    img: "https://www.course-api.com/images/people/person-5.jpeg",
+    text: `The team's technical architecture decisions were spot-on. Their microservices implementation improved our system's scalability and reduced deployment times significantly.`,
+  },
+  {
+    id: 6,
+    name: "michael patel",
+    job: "product manager",
+    img: "https://images.unsplash.com/photo-1734656633373-1f8e977a2a75?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    text: `From a product perspective, their ability to translate business requirements into technical solutions is outstanding. They consistently delivered features that exceeded stakeholder expectations.`,
+  },
+
+  {
+    id: 7,
+    name: "emma rodriguez",
+    job: "ux researcher",
+    img: "https://images.unsplash.com/photo-1741363578916-7f5fea7d6de4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    text: `The team's commitment to user-centered design principles was evident throughout the project. Our usability scores improved by 60% after implementing their recommended changes.`,
+  },
 ];
+
 // Select items
 const img = document.getElementById("person-img");
 const author = document.getElementById("author");
